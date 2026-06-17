@@ -124,6 +124,7 @@ const schema = defineSchema({
     lastName: v.string(),
     email: v.string(),
     profileImage: v.nullable(v.string()),
+    coverImage: v.optional(v.nullable(v.string())),
     phoneNumbers: v.array(v.string()),
     username: v.string(),
     title: v.nullable(v.id("titles")),
